@@ -8,43 +8,45 @@ import {
   House,
   User,
 } from "phosphor-react";
+import { Link, NavLink } from "react-router-dom";
 import twitterLogo from "../assets/logo-twitter.svg";
 import "./Sidebar.css";
-
+const blueActive = true;
 export function Sidebar() {
   return (
     <aside className="sidebar">
       <img className="logo" src={twitterLogo} alt="logo" />
+
       <nav className="main-navigation">
-        <a className="blue-active" href="">
+        <NavLink to="/">
           <House weight="fill" />
           Home
-        </a>
-        <a href="">
+        </NavLink>
+        <a href="/">
           <Hash />
           Explore
         </a>
-        <a href="">
+        <a href="/">
           <Bell />
           Notifications
         </a>
-        <a href="">
+        <a href="/">
           <Envelope />
           Messages
         </a>
-        <a href="">
+        <a href="/">
           <BookmarkSimple />
           Bookmarks
         </a>
-        <a href="">
+        <a href="/">
           <FileText />
           Lists
         </a>
-        <a href="">
+        <a href="/">
           <User />
           Profile
         </a>
-        <a href="">
+        <a href="/">
           <DotsThreeCircle />
           More
         </a>
